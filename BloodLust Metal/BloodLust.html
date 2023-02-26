@@ -1,6 +1,11 @@
-<input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Personnage" checked="checked" />
-<input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Arme" />
-<input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" title="Pouvoirs" />
+<input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="tab1"  />
+
+<div>
+    <button type="action" name="act_tab1" >Personnage</button>
+    <button type="action" name="act_tab2" >Arme</button>
+    <button type="action" name="act_tab3" >Pouvoirs</button>
+</div>
+
 
 <div class="sheet-tab-content sheet-tab1"><!-- Onglet 1 -->
 
@@ -9,7 +14,7 @@
 	         <img src="https://nsm09.casimages.com/img/2022/11/07//22110710041326446918044815.jpg" style="align:left;height:100px;margin-top:0px;">
 	    </div>
 		<div style="float:right;">
-			<input style="align:right;" type="text" name="attr_character_name" class="name" disabled />
+			<input style="align:right;" type="text" name="attr_character_name" class="name"  />
 		</div>
 		<div>
 			<button type="roll" value="/roll 1d20 + @{Bluff}" name="roll_BluffCheck"></button>
@@ -19,7 +24,7 @@
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;">Arme</div>
 			<div style="text-align:left;float: right;margin-right: 20px;">
-				<input type="text" name="attr_arme_nom" style="text-align:center" disabled>
+				<input type="text" name="attr_arme_nom" style="text-align:center" >
 			</div>			
 		</div>
 		<div style="clear: both;"></div>
@@ -107,7 +112,7 @@
 		<div style="clear: both;"></div>
 		<div style="text-align:center" >
 		    <div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox"  value="0" value="0" class="check" name="attr_administrateur_check">Administrateur
+				<input type="checkbox"  value="0" value="0" class="" name="attr_administrateur_check">Administrateur
 			</div>
 		    <div style="text-align:left;float: right;margin-left:20px;">
 			<input type="number"  name="attr_administrateur_val" value=1 min=1 max=5 />
@@ -116,7 +121,7 @@
 		<div style="clear: both;"></div>
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-	        	<input type="checkbox"  value="0" class="check" name="attr_artisan_check">Artisan
+	        	<input type="checkbox"  value="0" class="" name="attr_artisan_check">Artisan
 			</div>
 	        <div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_artisan_val" value=1 min=1 max=5 />
@@ -125,7 +130,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 	        <div style="text-align:left;float: left;margin-left:20px;">
-	        	<input type="checkbox"  value="0" class="check" name="attr_artiste_check">Artiste
+	        	<input type="checkbox"  value="0" class="" name="attr_artiste_check">Artiste
 			</div>
 	        <div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_artiste_val" value=1 min=1 max=5 />
@@ -134,7 +139,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 	        <div style="text-align:left;float: left;margin-left:20px;">
-	        	<input type="checkbox"  value="0" class="check" name="attr_athlete_check">Athl&eacute;te
+	        	<input type="checkbox"  value="0" class="" name="attr_athlete_check">Athl&eacute;te
 			</div>
 	        <div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_athlete_val" value=1 min=1 max=5 />
@@ -143,7 +148,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 	        <div style="text-align:left;float: left;margin-left:20px;">
-	        	<input type="checkbox"  value="0" class="check" name="attr_bagarreur_check">Bagarreur
+	        	<input type="checkbox"  value="0" class="" name="attr_bagarreur_check">Bagarreur
 			</div>
 	        <div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_bagarreur_val" value=1 min=1 max=5 />
@@ -152,7 +157,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_batelier_check">Batelier
+        		<input type="checkbox"  value="0" class="" name="attr_batelier_check">Batelier
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_batelier_val" value=1 min=1 max=5 />
@@ -161,7 +166,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox"  value="0" class="check" name="attr_bougeard_check">Bougeard
+				<input type="checkbox"  value="0" class="" name="attr_bougeard_check">Bougeard
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_bougeard_val" value=1 min=1 max=5 />
@@ -170,7 +175,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_bricoleur_check">Bricoleur
+        		<input type="checkbox"  value="0" class="" name="attr_bricoleur_check">Bricoleur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_bricoleur_val" value=1 min=1 max=5 />
@@ -179,7 +184,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_citadin_check">Citadin
+        		<input type="checkbox"  value="0" class="" name="attr_citadin_check">Citadin
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_citadin_val" value=1 min=1 max=5 />
@@ -188,7 +193,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_eclaireur_check">&Eacute;claireur
+        		<input type="checkbox"  value="0" class="" name="attr_eclaireur_check">&Eacute;claireur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_eclaireur_val" value=1 min=1 max=5 />
@@ -197,7 +202,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_erudit_check">&Eacute;rudit
+        		<input type="checkbox"  value="0" class="" name="attr_erudit_check">&Eacute;rudit
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_erudit_val" value=1 min=1 max=5 />
@@ -206,7 +211,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_ferrailleur_check">Ferrailleur
+        		<input type="checkbox"  value="0" class="" name="attr_ferrailleur_check">Ferrailleur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_ferrailleur_val" value=1 min=1 max=5 />
@@ -215,7 +220,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_gentilhomme_check">Gentilhomme
+        		<input type="checkbox"  value="0" class="" name="attr_gentilhomme_check">Gentilhomme
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_gentilhomme_val" value=1 min=1 max=5 />
@@ -224,7 +229,7 @@
 			<div style="clear: both;"></div>
 		    <div style="text-align:center" >
 	        	<div style="text-align:left;float: left;margin-left:20px;">
-	        		<input type="checkbox"  value="0" class="check" name="attr_intrigant_check">Intrigant
+	        		<input type="checkbox"  value="0" class="" name="attr_intrigant_check">Intrigant
 				</div>
 	        	<div style="text-align:left;float: right;margin-left:20px;">
 					<input type="number"  name="attr_intrigant_val" value=1 min=1 max=5 />
@@ -233,7 +238,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_larron_check">Larron
+        		<input type="checkbox"  value="0" class="" name="attr_larron_check">Larron
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_larron_val" value=1 min=1 max=5 />
@@ -242,7 +247,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_marchand_check">Marchand
+        		<input type="checkbox"  value="0" class="" name="attr_marchand_check">Marchand
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_marchand_val" value=1 min=1 max=5 />
@@ -251,7 +256,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_medecin_check">M&eacute;decin
+        		<input type="checkbox"  value="0" class="" name="attr_medecin_check">M&eacute;decin
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_medecin_val" value=1 min=1 max=5 />
@@ -260,7 +265,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_orateur_check">Orateur
+        		<input type="checkbox"  value="0" class="" name="attr_orateur_check">Orateur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_orateur_val" value=1 min=1 max=5 />
@@ -269,7 +274,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_paysan_check">Paysan
+        		<input type="checkbox"  value="0" class="" name="attr_paysan_check">Paysan
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_paysan_val" value=1 min=1 max=5 />
@@ -278,7 +283,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_saltimbanque_check">Saltimbanque
+        		<input type="checkbox"  value="0" class="" name="attr_saltimbanque_check">Saltimbanque
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_saltimbanque_val" value=1 min=1 max=5 />
@@ -287,7 +292,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_soldat_check">Soldat
+        		<input type="checkbox"  value="0" class="" name="attr_soldat_check">Soldat
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_soldat_val" value=1 min=1 max=5 />
@@ -296,7 +301,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_tireur_check">Tireur
+        		<input type="checkbox"  value="0" class="" name="attr_tireur_check">Tireur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_tireur_val" value=1 min=1 max=5 />
@@ -305,7 +310,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_veneur_check">Veneur
+        		<input type="checkbox"  value="0" class="" name="attr_veneur_check">Veneur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_veneur_val" value=1 min=1 max=5 />
@@ -314,7 +319,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_voyageur_check">Voyageur
+        		<input type="checkbox"  value="0" class="" name="attr_voyageur_check">Voyageur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_voyageur_val" value=1 min=1 max=5 />
@@ -323,7 +328,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_porteur_check">Porteur
+        		<input type="checkbox"  value="0" class="" name="attr_porteur_check">Porteur
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
 				<input type="number"  name="attr_porteur_val" min=0 max=5 value=0 />
@@ -507,28 +512,32 @@
 					<th>Fatigue</th>
 					<th>Faiblesse</th>
 					<th>Tension</th>
+					<th></th>
 				</tr>
 				<tr style="text-align:center" >
 					<td>
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_fatigue1">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_fatigue2">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_fatigue3">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_fatigue4">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_fatigue5">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_fatigue1">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_fatigue2">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_fatigue3">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_fatigue4">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_fatigue5">
+						<input type="number" style="height:20px"  name="attr_exp_fatigue" />
 					</td>
 					<td>
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_faiblesse1">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_faiblesse2">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_faiblesse3">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_faiblesse4">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_faiblesse5">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_faiblesse1">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_faiblesse2">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_faiblesse3">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_faiblesse4">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_faiblesse5">
+						<input type="number" style="height:20px" name="attr_exp_faiblesse" />
 					</td>
 					<td>
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_tension1">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_tension2">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_tension3">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_tension4">
-						<input type="checkbox" value="0" class="check" style="height:20px" name="attr_tension5">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_tension1">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_tension2">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_tension3">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_tension4">
+						<input type="checkbox" value="0" class="" style="height:20px" name="attr_tension5">
+						<input type="number" style="height:20px" name="attr_exp_tension" />
 					</td>
 					<td></td>
 				</tr>
@@ -717,7 +726,7 @@
 		<div><label>Aspects</label></div>
 	    <div style="text-align:center" >
 	        <div style="text-align:left;float: left;margin-left:20px;">
-	        	<input type="checkbox"  value="0" class="check" name="attr_aspect1_check">
+	        	<input type="checkbox"  value="0" class="" name="attr_aspect1_check">
 				<input type="text" style="height:20px" name="attr_aspect1" />
 			</div>
 	        <div style="text-align:left;float: right;margin-left:20px;">
@@ -727,7 +736,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect2_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect2_check">
 				<input type="text" style="height:20px" name="attr_aspect2" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -737,7 +746,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect3_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect3_check">
 				<input type="text" style="height:20px" name="attr_aspect3" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -747,7 +756,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect4_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect4_check">
 				<input type="text" style="height:20px" name="attr_aspect4" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -757,7 +766,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect5_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect5_check">
 				<input type="text" style="height:20px" name="attr_aspect5" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -767,7 +776,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect6_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect6_check">
 				<input type="text" style="height:20px" name="attr_aspect6" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -777,7 +786,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect7_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect7_check">
 				<input type="text" style="height:20px" name="attr_aspect7" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -787,7 +796,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect8_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect8_check">
 				<input type="text" style="height:20px" name="attr_aspect8" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -797,7 +806,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect9_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect9_check">
 				<input type="text" style="height:20px" name="attr_aspect9" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -807,7 +816,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect10_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect10_check">
 				<input type="text" style="height:20px" name="attr_aspect10" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -817,7 +826,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect11_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect11_check">
 				<input type="text" style="height:20px" name="attr_aspect11" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -827,7 +836,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect12_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect12_check">
 				<input type="text" style="height:20px" name="attr_aspect12" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -837,7 +846,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect12_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect12_check">
 				<input type="text" style="height:20px" name="attr_aspect13" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -847,7 +856,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect14_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect14_check">
 				<input type="text" style="height:20px" name="attr_aspect14" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -857,7 +866,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect15_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect15_check">
 				<input type="text" style="height:20px" name="attr_aspect15" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -867,7 +876,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect16_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect16_check">
 				<input type="text" style="height:20px" name="attr_aspect16" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -877,7 +886,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect17_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect17_check">
 				<input type="text" style="height:20px" name="attr_aspect17" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -887,7 +896,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect18_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect18_check">
 				<input type="text" style="height:20px" name="attr_aspect18" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -897,7 +906,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect19_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect19_check">
 				<input type="text" style="height:20px" name="attr_aspect19" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -907,7 +916,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect20_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect20_check">
 				<input type="text" style="height:20px" name="attr_aspect20" />
 		    </div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -917,7 +926,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_aspect21_check">
+        		<input type="checkbox"  value="0" class="" name="attr_aspect21_check">
 				<input type="text" style="height:20px" name="attr_aspect21" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -927,7 +936,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox"  value="0" class="check" name="attr_aspect22_check">
+				<input type="checkbox"  value="0" class="" name="attr_aspect22_check">
 				<input type="text" style="height:20px" name="attr_aspect22" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -943,7 +952,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille1_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille1_check">
 				<input type="text" style="height:20px" name="attr_faille1" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -953,7 +962,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille2_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille2_check">
 				<input type="text" style="height:20px" name="attr_faille2" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -963,7 +972,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille3_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille3_check">
 				<input type="text" style="height:20px" name="attr_faille3" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -973,7 +982,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille4_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille4_check">
 				<input type="text" style="height:20px" name="attr_faille4" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -983,7 +992,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille5_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille5_check">
 				<input type="text" style="height:20px" name="attr_faille5" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -993,7 +1002,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille6_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille6_check">
 				<input type="text" style="height:20px" name="attr_faille6" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -1003,7 +1012,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille7_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille7_check">
 				<input type="text" style="height:20px" name="attr_faille7" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -1013,7 +1022,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille8_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille8_check">
 				<input type="text" style="height:20px" name="attr_faille8" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -1023,7 +1032,7 @@
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-        		<input type="checkbox"  value="0" class="check" name="attr_faille9_check">
+        		<input type="checkbox"  value="0" class="" name="attr_faille9_check">
 				<input type="text" style="height:20px" name="attr_faille9" />
 			</div>
         	<div style="text-align:left;float: right;margin-left:20px;">
@@ -1049,7 +1058,7 @@
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;width: 110px;">Personnage</div>
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" name="attr_character_name" style="text-align:center" disabled>
+				<input type="text" name="attr_character_name" style="text-align:center" >
 			</div>
         </div>
 		<div style="clear: both;"></div>
@@ -1067,11 +1076,11 @@
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;width: 110px;">Puissance</div>
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_puissance1" checked disabled>
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_puissance2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_puissance3">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_puissance4">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_puissance5">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_puissance1" checked >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_puissance2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_puissance3">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_puissance4">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_puissance5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
@@ -1085,9 +1094,9 @@
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;width: 110px;">Flashback</div>
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_flashback1" checked disabled>
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_flashback2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_flashback3">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_flashback1" checked >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_flashback2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_flashback3">
 				(...)
 			</div>
         </div>
@@ -1120,18 +1129,18 @@
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;width: 110px;">Bonus de combat</div>
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_combat1" checked disabled>
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_combat2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_combat3">(...)
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_combat1" checked >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_combat2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_combat3">(...)
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;width: 110px;">Bonus de rupture</div>
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_rupture1" checked disabled>
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_rupture2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_rupture3">(...)
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_rupture1" checked >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_rupture2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_rupture3">(...)
 			</div>
         </div>
 		<div style="clear: both;"></div>
@@ -1146,9 +1155,9 @@
 				<input type="text" name="attr_arme_bonus_competence1" style="text-align:center;width:110px;">
 			</div>
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_competence1_1">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_competence1_2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_competence1_3">(...)
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_competence1_1">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_competence1_2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_competence1_3">(...)
 			</div>
         </div>
 		<div style="clear: both;"></div>
@@ -1157,9 +1166,9 @@
 				<input type="text" name="attr_arme_bonus_competence2" style="text-align:center;width:110px;">
 	        </div>
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_competence2_1">
-		   		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_competence2_2">
-	    		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_bonus_competence2_3">(...)
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_competence2_1">
+		   		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_competence2_2">
+	    		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_bonus_competence2_3">(...)
 			</div>
         </div>
 	</div>
@@ -1170,11 +1179,11 @@
 				<input type="text" name="attr_arme_motivation1" style="text-align:center;width:110px;">
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation1_1">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation1_2">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation1_3">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation1_4">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation1_5">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation1_1">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation1_2">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation1_3">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation1_4">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation1_5">
 			</div>
 			<div style="text-align:center" >
 	        	<div colspan=2 style="text-align:left">
@@ -1188,11 +1197,11 @@
 				<input type="text" name="attr_arme_motivation2" style="text-align:center;width:110px;">
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation2_1">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation2_2">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation2_3">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation2_4">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation2_5">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation2_1">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation2_2">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation2_3">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation2_4">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation2_5">
 			</div>
 			<div style="text-align:center" >
 	        	<div colspan=2 style="text-align:left">
@@ -1206,11 +1215,11 @@
 				<input type="text" name="attr_arme_motivation3" style="text-align:center;width:110px;">
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation3_1">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation3_2">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation3_3">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation3_4">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation3_5">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation3_1">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation3_2">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation3_3">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation3_4">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation3_5">
 			</div>
 			<div style="text-align:center" >
 	        	<div colspan=2 style="text-align:left">
@@ -1224,11 +1233,11 @@
 				<input type="text" name="attr_arme_motivation4" style="text-align:center;width:110px;">
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation4_1">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation4_2">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation4_3">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation4_4">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation4_5">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation4_1">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation4_2">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation4_3">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation4_4">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation4_5">
 			</div>
 			<div style="text-align:center" >
 	        	<div colspan=2 style="text-align:left">
@@ -1242,11 +1251,11 @@
 				<input type="text" name="attr_arme_motivation5" style="text-align:center;width:110px;">
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation5_1">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation5_2">
-        		<input type="checkbox" value="0" class="check" name="attr_arme_motivation5_3">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation5_4">
-				<input type="checkbox" value="0" class="check" name="attr_arme_motivation5_5">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation5_1">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation5_2">
+        		<input type="checkbox" value="0" class="" name="attr_arme_motivation5_3">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation5_4">
+				<input type="checkbox" value="0" class="" name="attr_arme_motivation5_5">
 			</div>
 			<div style="text-align:center" >
 				<div colspan=2 style="text-align:left">
@@ -1260,11 +1269,11 @@
 					<input type="text" name="attr_arme_remord1" style="text-align:center;width:110px;">
 				</div>
 				<div>
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord1_1">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord1_2">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord1_3">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord1_4">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord1_5">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord1_1">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord1_2">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord1_3">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord1_4">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord1_5">
 				</div>
 				<div style="text-align:center" >
 					<div colspan=2 style="text-align:left">
@@ -1278,11 +1287,11 @@
 					<input type="text" name="attr_arme_remord2" style="text-align:center;width:110px;">
 				</div>
 				<div>
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord2_1">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord2_2">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord2_3">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord2_4">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord2_5">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord2_1">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord2_2">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord2_3">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord2_4">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord2_5">
 				</div>
 				<div style="text-align:center" >
 					<div colspan=2 style="text-align:left">
@@ -1296,11 +1305,11 @@
 					<input type="text" name="attr_arme_remord3" style="text-align:center;width:110px;">
 				</div>
 				<div>
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord3_1">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord3_2">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord3_3">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord3_4">
-					<input type="checkbox" value="0" class="check" name="attr_arme_remord3_5">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord3_1">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord3_2">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord3_3">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord3_4">
+					<input type="checkbox" value="0" class="" name="attr_arme_remord3_5">
 				</div>
 				<div style="text-align:center" >
 					<div colspan=2 style="text-align:left">
@@ -1354,287 +1363,287 @@
 		<div><label>Aspects</label></div>
 		<div style="text-align:center" >
 	       	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect1" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect1" />
 		    </div>
 	       	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect1_1">
-	       		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect1_2">
-	       		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect1_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect1_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect1_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect1_1">
+	       		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect1_2">
+	       		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect1_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect1_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect1_5">
 			</div>
 	    </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 	       	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect2" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect2" />
 		    </div>
 	       	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect2_1">
-	       		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect2_2">
-	       		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect2_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect2_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect2_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect2_1">
+	       		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect2_2">
+	       		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect2_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect2_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect2_5">
 			</div>
 	    </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect3" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect3" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect3_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect3_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect3_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect3_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect3_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect3_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect3_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect3_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect3_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect3_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect4" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect4" />
 		    </div>
 			<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect4_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect4_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect4_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect4_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect4_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect4_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect4_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect4_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect4_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect4_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect5" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect5" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect5_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect5_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect5_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect5_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect5_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect5_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect5_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect5_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect5_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect5_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect6" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect6" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect6_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect6_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect6_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect6_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect6_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect6_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect6_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect6_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect6_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect6_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect7" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect7" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect7_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect7_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect7_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect7_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect7_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect7_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect7_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect7_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect7_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect7_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect8" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect8" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect8_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect8_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect8_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect8_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect8_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect8_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect8_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect8_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect8_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect8_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect9" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect9" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect9_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect9_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect9_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect9_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect9_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect9_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect9_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect9_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect9_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect9_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect10" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect10" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect10_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect10_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect10_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect10_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect10_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect10_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect10_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect10_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect10_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect10_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_aspect11" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_aspect11" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect11_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect11_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect11_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect11_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect11_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect11_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect11_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect11_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect11_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect11_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect12" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect12" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect12_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect12_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect12_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect12_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect12_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect12_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect12_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect12_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect12_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect12_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect13" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect13" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect13_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect13_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect13_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect13_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect13_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect13_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect13_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect13_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect13_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect13_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect14" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect14" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect14_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect14_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect14_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect14_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect14_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect14_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect14_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect14_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect14_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect14_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect15" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect15" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect15_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect15_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect15_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect15_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect15_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect15_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect15_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect15_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect15_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect15_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect16" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect16" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect16_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect16_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect16_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect16_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect16_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect16_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect16_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect16_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect16_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect16_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect17" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect17" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect17_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect17_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect17_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect17_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect17_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect17_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect17_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect17_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect17_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect17_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect18" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect18" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect18_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect18_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect18_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect18_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect18_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect18_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect18_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect18_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect18_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect18_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect19" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect19" />
 		    </div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect19_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect19_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect19_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect19_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect19_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect19_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect19_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect19_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect19_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect19_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
         	<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect20" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect20" />
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect20_1">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect20_2">
-        		<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect20_3">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect20_4">
-				<input type="checkbox" value="0" class="check" style="height:20px" name="attr_arme_aspect20_5">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect20_1">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect20_2">
+        		<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect20_3">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect20_4">
+				<input type="checkbox" value="0" class="" style="height:20px" name="attr_arme_aspect20_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 				<div style="text-align:left;float: left;margin-left:20px;">
-					<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect21" />
+					<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect21" />
 				</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:21px" name="attr_arme_aspect21_1">
-        		<input type="checkbox" value="0" class="check" style="height:21px" name="attr_arme_aspect21_2">
-        		<input type="checkbox" value="0" class="check" style="height:21px" name="attr_arme_aspect21_3" >
-				<input type="checkbox" value="0" class="check" style="height:21px" name="attr_arme_aspect21_4">
-				<input type="checkbox" value="0" class="check" style="height:21px" name="attr_arme_aspect21_5">
+				<input type="checkbox" value="0" class="" style="height:21px" name="attr_arme_aspect21_1">
+        		<input type="checkbox" value="0" class="" style="height:21px" name="attr_arme_aspect21_2">
+        		<input type="checkbox" value="0" class="" style="height:21px" name="attr_arme_aspect21_3" >
+				<input type="checkbox" value="0" class="" style="height:21px" name="attr_arme_aspect21_4">
+				<input type="checkbox" value="0" class="" style="height:21px" name="attr_arme_aspect21_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_aspect22" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_aspect22" />
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_aspect22_1">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_aspect22_2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_aspect22_3">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_aspect22_4">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_aspect22_5">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_aspect22_1">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_aspect22_2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_aspect22_3">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_aspect22_4">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_aspect22_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
@@ -1651,30 +1660,30 @@
 				
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation1" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation1" />
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_1" >
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_2" >
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_3" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_4" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_5" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_1" >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_2" >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_3" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_4" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_5" >
 			</div>
         </div>
 		<div style="clear: both;"></div>
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation1_txt" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation1_txt" />
 			</div>
         	<div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_min">min
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_min">min
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_maj">maj
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_maj">maj
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation1_sup">sup
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation1_sup">sup
 				</div>
 			</div>
 		</div>
@@ -1682,92 +1691,61 @@
 		
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation2" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation2" />
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_1" >
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_2" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_3" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_4" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_5" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_1" >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_2" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_3" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_4" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_5" >
 			</div>
         </div>
 		<div style="clear: both;"></div>
 			
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation2_txt" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation2_txt" />
 			</div>
         	<div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_min">min
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_min">min
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_maj">maj
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_maj">maj
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation2_sup">sup
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation2_sup">sup
 				</div>
 			</div>
 		</div>
 		<div style="clear: both;"></div>
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation3" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation3" />
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_1" >
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_2" >
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_3" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_4" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_5" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_1" >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_2" >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_3" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_4" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_5" >
 			</div>
         </div>
 		<div style="clear: both;"></div>
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation3_txt" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation3_txt" />
 			</div>
         	<div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_min">min
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_min">min
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_maj">maj
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_maj">maj
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation3_sup">sup
-				</div>
-			</div>
-		</div>
-		<div style="clear: both;"></div>
-			
-	    <div style="text-align:center" >
-			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation4" />
-			</div>
-        	<div>
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_1" >
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_2" >
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_3" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_4" >
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_5" >
-			</div>
-        </div>
-		<div style="clear: both;"></div>
-		<div style="text-align:center" >
-			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation4_txt" />
-			</div>
-        	<div>
-				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_min">min
-				</div>
-				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_maj">maj
-				</div>
-				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation4_sup">sup
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation3_sup">sup
 				</div>
 			</div>
 		</div>
@@ -1775,30 +1753,61 @@
 			
 	    <div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation5" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation4" />
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_1">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_3">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_4">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_5">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_1" >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_2" >
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_3" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_4" >
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_5" >
 			</div>
         </div>
 		<div style="clear: both;"></div>
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation5_txt" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation4_txt" />
+			</div>
+        	<div>
+				<div style="display:inline-block">
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_min">min
+				</div>
+				<div style="display:inline-block">
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_maj">maj
+				</div>
+				<div style="display:inline-block">
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation4_sup">sup
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+			
+	    <div style="text-align:center" >
+			<div style="text-align:left;float: left;margin-left:20px;">
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation5" />
+			</div>
+        	<div>
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_1">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_3">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_4">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_5">
+			</div>
+        </div>
+		<div style="clear: both;"></div>
+		<div style="text-align:center" >
+			<div style="text-align:left;float: left;margin-left:20px;">
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation5_txt" />
 			</div>
 			<div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_min">min
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_min">min
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_maj">maj
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_maj">maj
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation5_sup">sup
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation5_sup">sup
 				</div>
 			</div>
 		</div>
@@ -1806,30 +1815,30 @@
 			
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation6" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation6" />
 			</div>
         	<div>
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_1">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_2">
-        		<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_3">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_4">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_5">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_1">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_2">
+        		<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_3">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_4">
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_5">
 			</div>
         </div>
 		<div style="clear: both;"></div>
 		<div style="text-align:center" >
 			<div style="text-align:left;float: left;margin-left:20px;">
-				<input type="text" style="height:20px;width: 190px;" name="attr_arme_limitation6_txt" />
+				<input type="text" style="height:20px;width: 175px;" name="attr_arme_limitation6_txt" />
 			</div>
 			<div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_min">min
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_min">min
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_maj">maj
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_maj">maj
 				</div>
 				<div style="display:inline-block">
-					<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_limitation6_sup">sup
+					<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_limitation6_sup">sup
 				</div>
 			</div>
 		</div>		
@@ -1846,27 +1855,27 @@
 <div class="sheet-tab-content sheet-tab3"><!-- onglet 3-->
 	<div>
 		<label style="width:100px;float:left;">Nom de l'arme</label>
-		<input type="text" name="attr_arme_nom" style="text-align:center" disabled>
+		<input type="text" name="attr_arme_nom" style="text-align:center" >
 		Valeur en xp : 1 / 6 / 11 / 21 / 41 - mineure x1 - majeure x2 - supérieure x3
 	</div>
 	<div style="float:left;">
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir1" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir1_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir1_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -1880,13 +1889,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir1_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition1_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition1_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition1_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -1897,20 +1906,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir2" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir2_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir2_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -1924,13 +1933,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir2_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition2_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition2_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition2_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -1941,20 +1950,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir3" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir3_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir3_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -1968,13 +1977,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir3_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition3_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition3_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition3_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -1985,20 +1994,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir4" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir4_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir4_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2012,13 +2021,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir4_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition4_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition4_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition4_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2028,20 +2037,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir5" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir5_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir5_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2055,13 +2064,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir5_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition5_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition5_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition5_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2071,20 +2080,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir6" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir6_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir6_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2098,13 +2107,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir6_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition6_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition6_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition6_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2114,20 +2123,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir7" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir7_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir7_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2141,13 +2150,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir7_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition7_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition7_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition7_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2157,20 +2166,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir8" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir8_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir8_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2184,13 +2193,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir8_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition8_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition8_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition8_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2200,20 +2209,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir9" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir9_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir9_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2227,13 +2236,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir9_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition9_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition9_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition9_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2243,20 +2252,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir10" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir10_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir10_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2270,13 +2279,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir10_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition10_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition10_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition10_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2286,20 +2295,20 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir11" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_5"/>
 			...
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_min">min
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_min">min
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_maj">maj
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_maj">maj
 			</div>
 			<div style="display:inline-block">
-				<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir11_sup">sup
+				<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir11_sup">sup
 			</div>			
 		</div>
 		<div>
@@ -2313,13 +2322,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir11_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition11_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition11_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition11_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2329,15 +2338,15 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir12" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_5"/>
 			...
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_min">min</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_maj">maj</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir12_sup">sup</div>			
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_min">min</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_maj">maj</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir12_sup">sup</div>			
 		</div>
 		<div>
 			<div style="text-align:center;float:left;">
@@ -2350,13 +2359,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir12_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition12_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition12_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition12_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2366,15 +2375,15 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir13" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_5"/>
 			...
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_min">min</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_maj">maj</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir13_sup">sup</div>			
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_min">min</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_maj">maj</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir13_sup">sup</div>			
 		</div>
 		<div>
 			<div style="text-align:center;float:left;">
@@ -2387,13 +2396,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir13_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition13_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition13_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition13_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2403,15 +2412,15 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir14" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_5"/>
 			...
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_min">min</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_maj">maj</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir14_sup">sup</div>			
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_min">min</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_maj">maj</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir14_sup">sup</div>			
 		</div>
 		<div>
 			<div style="text-align:center;float:left;">
@@ -2424,13 +2433,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir14_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition14_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition14_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition14_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2440,15 +2449,15 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir15" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_5"/>
 			...
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_min">min</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_maj">maj</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir15_sup">sup</div>			
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_min">min</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_maj">maj</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir15_sup">sup</div>			
 		</div>
 		<div>
 			<div style="text-align:center;float:left;">
@@ -2461,13 +2470,13 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir15_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition15_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition15_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition15_nombre"/>)
 				</div>
 			</div>
 			<div></div>
@@ -2477,15 +2486,15 @@
 		<div>
 			<label style="float: left;width: 100px;">Pouvoir:</label>
 			<input type="text" name="attr_arme_pouvoir16" style="text-align:center;float:left;width: 65%;" />	
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_1"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_2"/>
-		    <input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_3"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_4"/>
-			<input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_5"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_1"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_2"/>
+		    <input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_3"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_4"/>
+			<input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_5"/>
 			...
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_min">min</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_maj">maj</div>
-			<div style="display:inline-block"><input type="checkbox" value="0" class="check" style="height:22px" name="attr_arme_pouvoir16_sup">sup</div>			
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_min">min</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_maj">maj</div>
+			<div style="display:inline-block"><input type="checkbox" value="0" class="" style="height:22px" name="attr_arme_pouvoir16_sup">sup</div>			
 		</div>
 		<div>
 			<div style="text-align:center;float:left;">
@@ -2498,16 +2507,28 @@
 				<div style="float:left;">Condition:</div>
 				<div><textarea style="width: 78%;float: left;height: 45px;" name="attr_arme_pouvoir16_condition"></textarea></div>
 				<div>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_1"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_2"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_3"/>
-					<input type="checkbox" value="0" class="check" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_4"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_1"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_2"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_3"/>
+					<input type="checkbox" value="0" class="" style="height:22px;float:left;display:inline-block" name="attr_arme_pouvoir_condition16_4"/>
 				</div>
 				<div style="float:right;">
-					(<input type="number" value="0" class="check" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition16_nombre"/>)
+					(<input type="number" value="0" class="" style="height:22px;display:inline-block" name="attr_arme_pouvoir_condition16_nombre"/>)
 				</div>
 			</div>
 			<div></div>
 		</div>
 	</div>
 </div>
+
+<script type="text/worker">
+    const buttonlist = ["tab1","tab2","tab3"];
+    buttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sheetTab: button
+            });
+        });
+    });
+    
+</script>
